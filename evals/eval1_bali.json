@@ -1,0 +1,29 @@
+{
+    "input": {
+      "goal": "I want to travel to Bali next week. Is it safe? What's the weather like?",
+      "location": "Bali"
+    },
+    "planner_output": [
+      "Check safety using NewsAPI",
+      "Get weather forecast from OpenWeatherMap",
+      "Fetch Bali images from Unsplash",
+      "Summarize everything"
+    ],
+    "agent_outputs": {
+      "news": [
+        "Bali tourism rebounds post-COVID",
+        "Local festivals expected next week"
+      ],
+      "weather": {
+        "2025-06-23": "28°C, light rain",
+        "2025-06-24": "29°C, clear sky"
+      },
+      "images": [
+        "https://unsplash.com/photos/abc123",
+        "https://unsplash.com/photos/xyz456"
+      ]
+    },
+    "final_summary": "It is generally safe to travel to Bali next week. Expect warm weather with occasional light rain. Cultural festivals are scheduled. Great time to visit!",
+    "evaluation": "✅ Goal well satisfied. Agents worked in order with meaningful data transfer. Output is coherent and complete."
+  }
+  

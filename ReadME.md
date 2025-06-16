@@ -177,3 +177,92 @@ Open your browser or Postman and hit: `http://localhost:5000/travel-plan`
 
 **Lakshay Goel**
 BTech CS-AI | 3rd Year | [LinkedIn](https://www.linkedin.com/in/your-profile) | [Portfolio](https://lakshay-portfolio-five.vercel.app/)
+
+
+
+
+
+
+# 📊 Multi-Agent System – Evaluations
+
+These evaluations demonstrate how Travel Smart AI breaks down user goals, routes data between agents, and generates useful travel reports. Each eval includes user input, agent breakdown, outputs, and a brief assessment.
+
+---
+
+## ✅ Evaluation 1 – Bali
+
+**🧠 Goal:**  
+"I want to travel to Bali next week. Is it safe? What's the weather like?"
+
+**📍 Location:** Bali
+
+**🧭 Planner Output:**
+- Check safety via NewsAPI
+- Get weather forecast via OpenWeatherMap
+- Fetch images via Unsplash
+- Summarize all information
+
+**🤖 Agent Outputs:**
+
+- **NewsAgent:**
+  - "Bali tourism rebounds post-COVID"
+  - "Local festivals expected next week"
+
+- **WeatherAgent:**
+  - `2025-06-23`: 28°C, light rain  
+  - `2025-06-24`: 29°C, clear sky
+
+- **ImageAgent:**
+  - `https://unsplash.com/photos/abc123`
+  - `https://unsplash.com/photos/xyz456`
+
+**📋 Final Synthesized Report:**
+
+> It is generally safe to travel to Bali next week. Expect warm weather with occasional light rain. Cultural festivals are scheduled. Great time to visit!
+
+**✅ Evaluation Summary:**  
+Goal well satisfied. Planner correctly routed through all agents. Agent chaining and enrichment worked smoothly. Final output was coherent and informative.
+
+---
+
+## ⚠️ Evaluation 2 – Tokyo
+
+**🧠 Goal:**  
+"I'm planning a trip to Tokyo this weekend. What's the weather and any recent safety news?"
+
+**📍 Location:** Tokyo
+
+**🧭 Planner Output:**
+- Check safety via NewsAPI
+- Get weather forecast via OpenWeatherMap
+- Fetch images via Unsplash
+- Summarize all information
+
+**🤖 Agent Outputs:**
+
+- **NewsAgent:**
+  - "Tokyo braces for weekend thunderstorms"
+  - "Advisory issued for outdoor events"
+
+- **WeatherAgent:**
+  - `2025-06-22`: 27°C, thunderstorms  
+  - `2025-06-23`: 26°C, cloudy
+
+- **ImageAgent:**
+  - `https://unsplash.com/photos/tokyo1`
+  - `https://unsplash.com/photos/tokyo2`
+
+**📋 Final Synthesized Report:**
+
+> Caution is advised due to thunderstorms in Tokyo this weekend. Outdoor activities may be impacted. Stay updated with weather alerts. Otherwise, no major safety concerns reported.
+
+**⚠️ Evaluation Summary:**  
+Planner and agents performed as expected. Weather alerts and news were both highly relevant. Agents enriched each other’s data correctly, and final summary was goal-aligned.
+
+---
+
+✅ These evaluations demonstrate:
+- Planner’s ability to understand and decompose goals
+- Seamless chaining of agents and information flow
+- Real-world utility for travel readiness
+

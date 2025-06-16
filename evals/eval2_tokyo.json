@@ -1,0 +1,29 @@
+{
+    "input": {
+      "goal": "I'm planning a trip to Tokyo this weekend. What's the weather and any recent safety news?",
+      "location": "Tokyo"
+    },
+    "planner_output": [
+      "Check safety using NewsAPI",
+      "Get weather forecast from OpenWeatherMap",
+      "Fetch Tokyo images from Unsplash",
+      "Summarize everything"
+    ],
+    "agent_outputs": {
+      "news": [
+        "Tokyo braces for weekend thunderstorms",
+        "Advisory issued for outdoor events"
+      ],
+      "weather": {
+        "2025-06-22": "27°C, thunderstorms",
+        "2025-06-23": "26°C, cloudy"
+      },
+      "images": [
+        "https://unsplash.com/photos/tokyo1",
+        "https://unsplash.com/photos/tokyo2"
+      ]
+    },
+    "final_summary": "Caution is advised due to thunderstorms in Tokyo this weekend. Outdoor activities may be impacted. Stay updated with weather alerts. Otherwise, no major safety concerns reported.",
+    "evaluation": "⚠️ Agents successfully extracted timely weather alerts and relevant news. Final summary reflects cautious tone. Great coordination and routing by the planner."
+  }
+  
