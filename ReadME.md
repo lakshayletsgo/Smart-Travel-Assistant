@@ -8,6 +8,7 @@ A Google ADK-based multi-agent system that takes a user’s travel goal (e.g., �
 
 ✅ Multi-Agent Architecture using Google ADK principles
 ✅ Goal-driven planning from natural language
+✅ Flask API backend with REST endpoints
 ✅ Weather Forecast from OpenWeatherMap API
 ✅ Safety & News Headlines via NewsAPI
 ✅ Location-based Image Summary via Unsplash API
@@ -21,7 +22,6 @@ A Google ADK-based multi-agent system that takes a user’s travel goal (e.g., �
 1. **User enters a travel goal**, e.g.:
 
    > “I want to travel to Bali next week. Is it safe? What’s the weather like? Show me some highlights.”
-   > "Bali"
 
 2. The **Planning Agent** splits this into tasks:
 
@@ -37,6 +37,41 @@ A Google ADK-based multi-agent system that takes a user’s travel goal (e.g., �
 
 ---
 
+## 🌐 API Endpoints
+
+Once the application is running, you can access the endpoints using Postman or a similar tool:
+
+### 🔎 Health Check
+
+* **Method:** GET
+* **URL:** `http://localhost:5000/health`
+
+### ✈️ Travel Planning Endpoint
+
+* **Method:** POST
+* **URL:** `http://localhost:5000/travel-plan`
+* **Headers:**
+
+  * `Content-Type: application/json`
+* **Body (raw JSON):**
+
+```json
+{
+    "goal": "I want to travel to Bali next week. Is it safe? What's the weather like?",
+    "location": "Bali"
+}
+```
+
+* **Response:** JSON containing:
+
+  * Travel Plan
+  * Safety News
+  * Weather Forecast
+  * Location Images
+  * Synthesized Travel Report
+
+---
+
 ## 🗂️ Folder Structure
 
 ```
@@ -47,7 +82,7 @@ travel_smart_ai/
 │   ├── weather_agent.py      # Weather forecast agent
 │   ├── image_agent.py        # Unsplash image fetcher
 │   └── synthesizer.py        # Final report builder
-├── main.py                   # Entry point for agent orchestration
+├── app.py                   # Flask application file
 ├── .env                      # API keys (do not share)
 ├── requirements.txt
 └── README.md
@@ -89,13 +124,13 @@ UNSPLASH_ACCESS_KEY=your_unsplash_access_key
 
 ---
 
-## ▶️ Run the App
+## ▶️ Run the Flask App
 
 ```bash
-python main.py
+python app.py
 ```
 
-You’ll see a structured travel summary in your console.
+Open your browser or Postman and hit: `http://localhost:5000/travel-plan`
 
 ---
 
@@ -138,8 +173,7 @@ You’ll see a structured travel summary in your console.
 
 ---
 
-
 ## 👨‍💻 Author
 
 **Lakshay Goel**
-BTech CS-AI | 3rd Year | [LinkedIn](https://www.linkedin.com/in/-lakshay-goel) | [Portfolio](https://lakshay-portfolio-five.vercel.app/)
+BTech CS-AI | 3rd Year | [LinkedIn](https://www.linkedin.com/in/your-profile) | [Portfolio](https://lakshay-portfolio-five.vercel.app/)
