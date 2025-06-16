@@ -60,8 +60,8 @@ travel_smart_ai/
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/travel-smart-ai.git
-cd travel-smart-ai
+git clone https://github.com/lakshayletsgo/Smart-Travel-Assistant.git
+cd Smart-Travel-Assistant
 ```
 
 ### 2️⃣ Create a Virtual Environment
@@ -138,13 +138,8 @@ You’ll see a structured travel summary in your console.
 
 ---
 
-## 📄 License
-
-This project is under the [MIT License](LICENSE).
-
----
 
 ## 👨‍💻 Author
 
 **Lakshay Goel**
-BTech CS-AI | 3rd Year | [LinkedIn](https://www.linkedin.com/in/your-profile)
+BTech CS-AI | 3rd Year | [LinkedIn](https://www.linkedin.com/in/-lakshay-goel) | [Portfolio](https://lakshay-portfolio-five.vercel.app/)
